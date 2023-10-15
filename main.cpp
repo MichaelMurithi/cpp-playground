@@ -12,15 +12,15 @@ int addNumbers(int firstNumber, int secondNumber){
 
 void getUserInfo(){
     int age;
-    std::string name;
+    std::string firstName, lastName;
 
-    std::cout << "Please type in your last name : " << std::endl;
-    std::cin >> name;
+    std::cout << "Please type in your first name and last name separated by spaces: " << std::endl;
+    std::cin >> firstName >> lastName;
 
     std::cout << "Please type in your age : " << std::endl;
     std::cin >> age;
 
-    std::cout << "Hello " << name << "! You are " << age << " years old!" << std::endl;
+    std::cout << "Hello " << firstName << " "  << lastName << "! You are " << age << " years old!" << std::endl;
 }
 
 int main(){
