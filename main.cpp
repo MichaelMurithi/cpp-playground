@@ -18,6 +18,16 @@ void integerModifiers(){
     std::cout << "Signed value 2 : " << value2 << std::endl;
 }
 
+void fractionalNumbers(){
+    float number1{1.12344556666666f};
+    double number2{1.23342344444345456};
+    long double number3{1.12232543657768879980L};
+
+    std::cout << "size of float : " << sizeof(float) << std::endl;
+    std::cout << "size of double : " << sizeof(double) << std::endl;
+    std::cout << "size of long double : " << sizeof(long double) << std::endl;
+}
+
 void getUserInfo(){
     int age;
     std::string firstName, lastName;
@@ -32,14 +42,16 @@ void getUserInfo(){
 }
 
 int main(){
-    int firstNumber {12}; // Braces initialization
-    int secondNumber (9); // Functional initialization
+    // int firstNumber {12}; // Braces initialization
+    // int secondNumber (9); // Functional initialization
 
-    int sum = addNumbers(firstNumber, secondNumber);
-    std::cout << "The sum of the two numbers is : " << sum << std::endl;
+    // int sum = addNumbers(firstNumber, secondNumber);
+    // std::cout << "The sum of the two numbers is : " << sum << std::endl;
 
-    getUserInfo();
-    integerModifiers();
+    // getUserInfo();
+    // integerModifiers();
+
+    fractionalNumbers();
 
     return 0;
 }
