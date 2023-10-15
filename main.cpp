@@ -1,13 +1,21 @@
-#include <iostream>
+#include <iostream> // Header for iostream library
+
+/**
+ * @brief
+ * Some multiline comments in C++
+ * @return int
+ */
+
+int addNumbers(int firstNumber, int secondNumber){
+    return firstNumber + secondNumber;
+}
 
 int main(){
-    std::cout << "Hello world, " << std::endl;
-    std::cout << "I know it is painful," << std::endl;
-    std::cout << "But I have to learn C++," << std::endl;
-    std::cout << "Yes, it is strange," << std::endl;
-    std::cout << "Yes, I don't feel like," << std::endl;
-    std::cout << "Yes, it is scary," << std::endl;
-    std::cout << "But it is what it is!" << std::endl;
+    int firstNumber {12};
+    int secondNumber {9};
+
+    int sum = addNumbers(firstNumber, secondNumber);
+    std::cout << "The sum of the two numbers is : " << sum << std::endl;
 
     return 0;
 }
