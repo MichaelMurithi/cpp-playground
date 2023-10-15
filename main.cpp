@@ -10,6 +10,14 @@ int addNumbers(int firstNumber, int secondNumber){
     return firstNumber + secondNumber;
 }
 
+void integerModifiers(){
+    signed int value1 {10};
+    signed int value2{-20};
+
+    std::cout << "Signed value 1 : " << value1 << std::endl;
+    std::cout << "Signed value 2 : " << value2 << std::endl;
+}
+
 void getUserInfo(){
     int age;
     std::string firstName, lastName;
@@ -24,13 +32,14 @@ void getUserInfo(){
 }
 
 int main(){
-    int firstNumber {12};
-    int secondNumber {9};
+    int firstNumber {12}; // Braces initialization
+    int secondNumber (9); // Functional initialization
 
     int sum = addNumbers(firstNumber, secondNumber);
     std::cout << "The sum of the two numbers is : " << sum << std::endl;
 
     getUserInfo();
+    integerModifiers();
 
     return 0;
 }
