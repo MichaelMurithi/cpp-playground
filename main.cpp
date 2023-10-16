@@ -10,6 +10,19 @@ int addNumbers(int firstNumber, int secondNumber){
     return firstNumber + secondNumber;
 }
 
+void getUserInfo(){
+    int age;
+    std::string firstName, lastName;
+
+    std::cout << "Please type in your first name and last name separated by spaces: " << std::endl;
+    std::cin >> firstName >> lastName;
+
+    std::cout << "Please type in your age : " << std::endl;
+    std::cin >> age;
+
+    std::cout << "Hello " << firstName << " "  << lastName << "! You are " << age << " years old!" << std::endl;
+}
+
 void integerModifiers(){
     signed int value1 {10};
     signed int value2{-20};
@@ -28,17 +41,30 @@ void fractionalNumbers(){
     std::cout << "size of long double : " << sizeof(long double) << std::endl;
 }
 
-void getUserInfo(){
-    int age;
-    std::string firstName, lastName;
+void booleanTypes(){
+    bool red_light{true};
+    bool green_light{false};
 
-    std::cout << "Please type in your first name and last name separated by spaces: " << std::endl;
-    std::cin >> firstName >> lastName;
+    if(red_light && green_light){
+        std::cerr << "You cannot stop and go at the same time!";
+        return;
+    }
 
-    std::cout << "Please type in your age : " << std::endl;
-    std::cin >> age;
+    if(red_light){
+        std::cout << "Hey, stop!";
+    }
 
-    std::cout << "Hello " << firstName << " "  << lastName << "! You are " << age << " years old!" << std::endl;
+    if(green_light){
+        std::cout << "Cool, go on!";
+    }
+}
+
+void playWithChars(){
+    char character1 {'C'};
+    char character2 {'+'};
+    char character3 {'+'};
+
+    std::cout << character1 << character2 << character3 << std::endl;
 }
 
 int main(){
@@ -50,8 +76,10 @@ int main(){
 
     // getUserInfo();
     // integerModifiers();
+    // fractionalNumbers();
 
-    fractionalNumbers();
+    // booleanTypes();
+    playWithChars();
 
     return 0;
 }
